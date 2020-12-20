@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    font-family: 'Quicksand', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-weight: 500;
+}
+
+
+/* DEBUT HEADER */
+
+.m_header {
+    box-shadow: 0px 0px 10px 0px #00000040;
+    background-color: #ffffffb9;
+    padding: 10px 0;
+}
+
+.m_header nav {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 60px;
+}
+
+.m_header nav div {
+    margin: 0 20px;
+    width: 60px;
+}
+
+.m_header div .img1 {
+    height: 60px;
+    width: 60px;
+}
+
+.m_header div .img2 {
+    display: none;
+    height: 60px;
+    width: 60px;
+}
+
+.m_header div:hover .img1 {
+    display: none;
+}
+
+.m_header div:hover .img2 {
+    text-shadow: 0px 0px 20px #CE5937;
+    display: block;
+}
+
+.m_header a {
+    margin: 0 20px;
+    transition: 0.5s;
+}
+
+.m_header a:hover {
+    letter-spacing: 2px;
+}
+
+
+/* FIN DE HEADER */
+
+.form_square,
+.formulaire {
+    justify-content: center;
+    display: flex;
+}
+
+main .img2 {
+    height: 100px;
+    width: 100px;
+}
+
+
+/* HOME PAGE   */
+
+.index section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 100px 0;
+}
+
+.index section div {
+    width: 350px;
+    padding-bottom: 20px;
+    background-color: rgba(221, 215, 213, 0.74);
+}
+
+.index section div img {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.index section div h3,
+.index section div p {
+    margin: 10px;
+}
+
+.div_index {
+    padding: 20px 20%;
+    background-color: rgba(205, 134, 63, 0.767);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.div_index button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 2px 0px #000000;
+    background-color: #ffffffea;
+    cursor: pointer;
+    color: rgb(17, 17, 17);
+    outline: none;
+    border: none;
+}
+
+.div_index button:hover {
+    box-shadow: inset 0px 0px 4px 0px #000000;
+}
+
+
+/* FIN HOME PAGE   */
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 100px;
+    height: 70px;
+    box-shadow: 0px 0px 10px 0px #00000040;
+    background-color: #ffffffb9;
+}
+
+
+/* FIN FOOTER */
+
+
+/* FORM ET INPUT */
+
+main section form {
+    box-shadow: 0px 0px 10px 0px #00000050;
+    /* transform: translate(-50%, -50%); */
+    background-color: #ffffffb9;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    /* position: absolute; */
+    padding: 20px 10px;
+    margin-top: 50px;
+    display: flex;
+    width: 350px;
+    /* left: 50%;
+    top: 50%; */
+}
+
+main section form div {
+    text-align: center;
+}
+
+.msg_erreur {
+    margin: 0 10%;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 80, 80);
+    background-color: #ff7a7aa1;
+    color: rgb(37, 37, 37);
+}
+
+.msg_erreur p {
+    margin: 20px 10px;
+}
+
+main section form input {
+    border: 2px solid #ff5757d0;
+    border-radius: 5px;
+    transition: 0.6s;
+    background: none;
+    padding: 0 10px;
+    outline: none;
+    margin: 5px 0;
+    height: 40px;
+    width: 80%;
+}
+
+main section form input:focus {
+    transform: scale(1.10);
+}
+
+main section form div {
+    margin-bottom: 60px;
+}
+
+main section form .top_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section form input::placeholder {
+    color: #3a3a3a;
+}
+
+main section form input[type="submit"] {
+    margin-top: 20px;
+    cursor: pointer;
+    width: 35%;
+}
+
+main section form input[type="submit"]:hover {
+    background-color: #ff5757d0;
+    font-size: 14px;
+    color: white;
+}
+
+
+/* DEBUT PLANNING */
+
+.planning {
+    justify-content: center;
+    padding: 60px;
+    display: flex;
+}
+
+.planning .agenda {
+    box-shadow: 0px 0px 10px 0px #00000040;
+    background-color: #ffffffb9;
+    border-radius: 0 25px 25px 0;
+    padding: 40px 20px;
+}
+
+.agenda div div:nth-last-child(2) {
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: flex;
+    height: 60px;
+}
+
+.planning .sidbar {
+    box-shadow: 0px 0px 10px 0px #00000040;
+    background-color: #ffffffe7;
+    justify-content: space-around;
+    border-radius: 25px 0 0 25px;
+    flex-direction: column;
+    align-items: ;
+    display: flex;
+    padding: 20px;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.plus_moins {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.plus_moins button {
+    box-shadow: 0px 2px 2px 0px #000000;
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    outline: inherit;
+}
+
+.plus_moins button:hover {
+    box-shadow: inset 0px 0px 2px 0px #000000;
+    background-color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+th,
+td {
+    background-color: #ffffffa8;
+    border: 1px solid #52525254;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px;
+    padding: 8px;
+}
+
+.reserved {
+    background-color: #cbffb67a;
+}
+
+.week {
+    background-color: #ffb6b67a;
+    color: #00000054;
+}
+
+.dispo {
+    background-color: #b6ffff7a;
+    color: #08080854;
+}
+
+.info div {
+    display: flex;
+    margin: 10px 0;
+}
+
+.info div:first-child i {
+    color: #6ee8ec;
+}
+
+.info div:nth-child(2) i {
+    color: #98fa95;
+}
+
+.info div:last-child i {
+    color: #ffb6b6;
+}
+
+.sidbar button {
+    box-shadow: 0px 2px 2px 0px #000000;
+    background-color: #ffffffa8;
+    padding: 8px 10px;
+    cursor: pointer;
+    color: rgb(17, 17, 17);
+    outline: none;
+    border: none;
+}
+
+.sidbar button:hover {
+    box-shadow: inset 0px 0px 2px 0px #000000;
+}
+
+.reserved form,
+.reserved input[type="submit"] {
+    background: none;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 2px 4px;
+    width: auto;
+    height: auto;
+}
+
+.reserved form:hover,
+.reserved input[type="submit"]:hover {
+    background-color: #7e7e7e93;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    color: white;
+}
+
+
+/* FIN PLANNING */
+
+
+/* DEBUT RESERVATION FORMULAIE */
+
+textarea {
+    border: 2px solid #ff5757d0;
+    border-radius: 5px;
+    transition: 0.6s;
+    background: none;
+    padding: 10px 10px;
+    outline: none;
+    margin: 5px 0;
+    height: 80px;
+    resize: none;
+    width: 80%;
+}
+
+.heure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+select {
+    border: 2px solid #ff5757d0;
+    border-radius: 5px;
+    transition: 0.6s;
+    background: none;
+    padding: 10px 10px;
+    outline: none;
+    margin: 5px 0;
+    height: 40px;
+    resize: none;
+    width: 38%;
+}
+
+
+/* FIN RESERVATION FORMULAIRE */
+
+
+/* DEBUT RESERVATION */
+
+.infoResa section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoResa section div {
+    background-color: #af7c1d98;
+    color: white;
+    text-align: center;
+    padding: 20px 50px;
+    width: 350px;
+    margin: 20px;
+}
+
+.infoResa section div .img3 {
+    width: 80px;
+}
+
+
+/* FIN RESERVATION */
+
+
+/* PROFIL */
+
+.form_profil {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.form_profil section {
+    box-shadow: 0px 0px 10px 0px #00000050;
+    background-color: #ffffffb9;
+    border-radius: 25px;
+    padding: 20px 10px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_profil section img {
+    width: 80px;
+}
+
+.form_profil section form {
+    background: none;
+    box-shadow: none;
+}
+
+.form_profil_2 {
+    display: flex;
+}
+
+.vide {
+    margin-top: 20px;
+    background-color: #ff5757bb;
+    width: 2px;
+    height: 80%;
+}
+
+
+/* FIN PROFIL */
