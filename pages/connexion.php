@@ -86,7 +86,9 @@
             </form>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>COPYRIGHT © ALL RIGHT RESERVED</p>
+    </footer>
 </body>
 
 </html>

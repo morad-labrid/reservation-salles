@@ -89,12 +89,9 @@
                         elseif ($heureDebut < $heureFin) {
                             $count = count($msg);
                             if ($count == 0) {
-                                echo"lenvoi vers la base<br>";
                                 while ($nombreHeure > 0) {
                                     $dateCompleteDebut = $date . " " . $heureDebut;
                                     $dateCompleteFin = $date . " " . $heureAenvoyer;
-                                    echo $dateCompleteDebut."<br>";
-                                    echo $dateCompleteFin."<br>";
                                         $insert = $conn -> prepare("INSERT INTO reservations (titre, description, debut, fin, id_utilisateur) 
                                         VALUES ('$titre', '$description', '$dateCompleteDebut', '$dateCompleteFin', '$id_utilisateur')");
                                         // $insert -> bindParam("titre", $titre);
@@ -194,7 +191,9 @@
             </form>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>COPYRIGHT © ALL RIGHT RESERVED</p>
+    </footer>
 </body>
 
 </html>

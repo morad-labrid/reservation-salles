@@ -146,6 +146,9 @@ footer {
     height: 70px;
     box-shadow: 0px 0px 10px 0px #00000040;
     background-color: #ffffffb9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -178,7 +181,7 @@ main section form div {
 .msg_erreur {
     margin: 0 10%;
     border-radius: 10px;
-    border: 1px solid rgb(255, 80, 80);
+    border: 1px solid #ff5050;
     background-color: #ff7a7aa1;
     color: rgb(37, 37, 37);
 }

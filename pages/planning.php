@@ -158,7 +158,9 @@ $today = dateToFrench('now', "l,") . "<br>" . dateToFrench('now', "j F");
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>COPYRIGHT © ALL RIGHT RESERVED</p>
+    </footer>
 </body>
 
 </html>
